@@ -1,0 +1,23 @@
+{
+  "name": "hex-events",
+  "version": "1.0.0",
+  "description": "Website that tracks events related to the HEX contract.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JasaJovan99/hex-events.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JasaJovan99/hex-events/issues"
+  },
+  "homepage": "https://github.com/JasaJovan99/hex-events#readme",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "express": "^4.17.1"
+  }
+}
