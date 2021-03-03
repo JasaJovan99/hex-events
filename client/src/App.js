@@ -1,23 +1,29 @@
 import logo from './logo.svg';
+import { useEffect, useState } from 'react';
 import './App.css';
+
+
+const Test = () => {
+  const [answer, setAnwser] = useState();
+
+  const getAnswer = async () => {
+    const res = await fetch("/api");
+    const answer = await res.json();
+    setAnwser(answer);
+  };
+
+  useEffect(() => {
+    getAnswer();
+  }, []);
+
+  return <div>{ JSON.stringify(answer) }</div>
+}
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <p>alkjsjdjaksjd</p>
+      <Test />
     </div>
   );
 }
